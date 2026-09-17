@@ -3,20 +3,15 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-// Placeholder data - replace with CMS/API data
-const selectedPieces = [
-  { id: 1, title: 'Dragon Back Piece', category: 'traditional', thumbnail: '/images/gallery/piece1.jpg' },
-  { id: 2, title: 'VTuber Character Sheet', category: 'digital', thumbnail: '/images/gallery/piece2.jpg' },
-  { id: 3, title: 'Phoenix Flash', category: 'traditional', thumbnail: '/images/gallery/piece3.jpg' },
-  { id: 4, title: 'Mascot Design', category: 'digital', thumbnail: '/images/gallery/piece4.jpg' },
-  { id: 5, title: 'Koi Sleeve', category: 'traditional', thumbnail: '/images/gallery/piece5.jpg' },
-];
+import Image from 'next/image';
+import { getFeaturedArtworks } from '@/lib/gallery-data';
 
 export default function SelectedWork() {
   const t = useTranslations('home');
   const pathname = usePathname();
   const locale = pathname.split('/')[1];
+
+  const featuredPieces = getFeaturedArtworks();
 
   return (
     <section className="section-padding">
@@ -41,28 +36,25 @@ export default function SelectedWork() {
         </div>
 
         {/* Masonry-style grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {selectedPieces.map((piece) => (
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          {featuredPieces.slice(0, 5).map((piece) => (
             <Link
               key={piece.id}
-              href={`/${locale}/gallery?piece=${piece.id}`}
-              className="group relative aspect-[3/4] rounded-lg overflow-hidden shadow-subtle hover:shadow-strong transition-shadow duration-300"
-              style={{
-                backgroundColor: piece.category === 'traditional' ? 'var(--color-ai)' : 'var(--color-sumi)',
-              }}
+              href={`/${locale}/gallery`}
+              className="break-inside-avoid group relative block overflow-hidden rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 transform hover:scale-[1.02]"
             >
-              {/* Placeholder for actual image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-3">
-                  <div className="text-5xl">{piece.category === 'traditional' ? '🐉' : '✨'}</div>
-                  <p className="text-washi/70 font-body text-sm px-4">
-                    Placeholder:<br />{piece.title}
-                  </p>
-                </div>
+              <div className="relative aspect-auto">
+                <Image
+                  src={piece.image}
+                  alt={piece.alt}
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-cover"
+                />
               </div>
 
               {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-sumi/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-sumi via-sumi/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <div>
                   <h3
                     className="font-display text-xl mb-2"
