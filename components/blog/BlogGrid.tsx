@@ -19,7 +19,7 @@ export default function BlogGrid({ posts, categories }: BlogGridProps) {
   const [selectedCategory, setSelectedCategory] = useState<BlogCategory | 'all'>('all');
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const gridRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     if (selectedCategory === 'all') {
