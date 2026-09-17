@@ -1,5 +1,4 @@
 import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
 import BlogHero from '@/components/blog/BlogHero';
 import BlogGrid from '@/components/blog/BlogGrid';
 import { getAllPosts } from '@/lib/blog-data';
@@ -12,7 +11,6 @@ type PageProps = {
 export default async function BlogPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations('blog');
 
   const posts = getAllPosts();
 

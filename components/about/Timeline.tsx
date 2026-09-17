@@ -46,16 +46,16 @@ export default function Timeline() {
   const t = useTranslations('about');
   const locale = useLocale();
   const sectionRef = useRef<HTMLElement>(null);
-  const pathRef = useRef<SVGPathElement>(null);
+  const lineRef = useRef<SVGLineElement>(null);
   const dotsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    if (!sectionRef.current || !pathRef.current) return;
+    if (!sectionRef.current || !lineRef.current) return;
 
     const ctx = gsap.context(() => {
       // Draw the brush-stroke path as user scrolls
       gsap.fromTo(
-        pathRef.current,
+        lineRef.current,
         { drawSVG: '0%' },
         {
           drawSVG: '100%',
@@ -70,7 +70,7 @@ export default function Timeline() {
       );
 
       // Animate milestone dots as they come into view
-      dotsRef.current.forEach((dot, index) => {
+      dotsRef.current.forEach((dot) => {
         if (!dot) return;
         
         gsap.fromTo(
@@ -123,7 +123,7 @@ export default function Timeline() {
                 </linearGradient>
               </defs>
               <line
-                ref={pathRef}
+                ref={lineRef}
                 x1="1"
                 y1="0"
                 x2="1"
