@@ -106,13 +106,16 @@ The gallery is the reason someone visits. It should be built before anything els
 
 ## 📋 Phase 2: Remaining Core Pages
 
-### About Page
-- [ ] Hero with portrait image
-- [ ] Timeline component with ScrollTrigger-driven brush-stroke path
-  - [ ] Milestone content (career highlights from age 4 to present)
-- [ ] Mediums section (digital, pencil, tattoo technique)
-- [ ] Philosophy section ("Where tradition meets the present")
-- [ ] Process image gallery (sketch-to-final progression)
+### About Page ✅ COMPLETE
+- [x] Hero with portrait image section
+- [x] Timeline component with ScrollTrigger-driven brush-stroke path
+  - [x] Milestone content (age 4, 16, 28, 44)
+  - [x] GSAP DrawSVG animation on scroll
+  - [x] Animated milestone dots
+- [x] Mediums section (digital, pencil, tattoo technique)
+- [x] Philosophy section ("Where tradition meets the present")
+- [x] Process image gallery (sketch-to-final progression)
+- [ ] Replace placeholder process images with actual photos
 
 ### Commissions Page
 - [ ] Process flow (Inquiry → Consultation → Design → Session)
