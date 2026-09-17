@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'tokyo-guest-spot',
     titleEn: 'Guest Spot: Tokyo November',
     titleJa: 'ゲストスポット：11月東京',
-    excerptEn: 'I'll be working at Studio Musashi in Tokyo for two weeks in November. Limited slots available.',
+    excerptEn: 'I&apos;ll be working at Studio Musashi in Tokyo for two weeks in November. Limited slots available.',
     excerptJa: '11月に2週間、東京のスタジオ ムサシで活動します。予約枠は限られています。',
     category: 'travel',
     date: '2026-08-28',
