@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { gsap } from 'gsap';
-import Image from 'next/image';
 
 // Placeholder artwork - replace with actual images
 const heroArtwork = [

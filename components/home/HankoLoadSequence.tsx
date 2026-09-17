@@ -2,12 +2,10 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 import HankoMark from '../shared/HankoMark';
 
 export default function HankoLoadSequence() {
   const [hasPlayed, setHasPlayed] = useState(false);
-  const [isSkipped, setIsSkipped] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const hankoRef = useRef<HTMLDivElement>(null);
 
@@ -93,7 +91,6 @@ export default function HankoLoadSequence() {
   }, []);
 
   const handleSkip = () => {
-    setIsSkipped(true);
     gsap.to(containerRef.current, {
       opacity: 0,
       duration: 0.3,

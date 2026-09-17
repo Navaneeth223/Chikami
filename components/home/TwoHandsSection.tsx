@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function TwoHandsSection() {
   const t = useTranslations('home');
@@ -165,7 +164,7 @@ export default function TwoHandsSection() {
                 className="font-body text-base md:text-lg leading-relaxed"
                 style={{ color: 'var(--color-washi)' }}
               >
-                Bright, saturated anime-style character sheets. Kawaii mascots. "Standing picture"
+                Bright, saturated anime-style character sheets. Kawaii mascots. &quot;Standing picture&quot;
                 reference art for VTubers and digital performers — Reiwa-era culture meeting
                 commission-driven creativity.
               </p>

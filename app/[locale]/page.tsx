@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import HankoLoadSequence from '@/components/home/HankoLoadSequence';
 import Hero from '@/components/home/Hero';
 import TwoHandsSection from '@/components/home/TwoHandsSection';

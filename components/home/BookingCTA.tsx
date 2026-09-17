@@ -29,7 +29,7 @@ export default function BookingCTA() {
             className="font-body text-lg md:text-xl leading-relaxed"
             style={{ color: 'var(--color-washi)', opacity: 0.8 }}
           >
-            Whether you're looking for traditional irezumi or vibrant character design, let's bring your vision to life.
+            Whether you&apos;re looking for traditional irezumi or vibrant character design, let&apos;s bring your vision to life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -63,8 +63,9 @@ export default function BookingCTA() {
               }}
             >
               <p className="text-washi/70 font-body text-sm">
-                X/Twitter feed embed will go here<br />
-                (Use Twitter's native widget or oEmbed)
+                X/Twitter feed embed will go here
+                <br />
+                (Use Twitter&apos;s native widget or oEmbed)
               </p>
             </div>
           </div>

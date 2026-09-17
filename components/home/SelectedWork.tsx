@@ -42,7 +42,7 @@ export default function SelectedWork() {
 
         {/* Masonry-style grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {selectedPieces.map((piece, index) => (
+          {selectedPieces.map((piece) => (
             <Link
               key={piece.id}
               href={`/${locale}/gallery?piece=${piece.id}`}
