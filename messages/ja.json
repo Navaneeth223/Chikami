@@ -112,13 +112,17 @@
   },
   "blog": {
     "title": "日記",
+    "subtitle": "制作過程のメモ、フラッシュドロップ、旅行のアップデート、スタジオからの舞台裏。",
     "categories": "カテゴリー",
+    "categoryAll": "すべて",
     "categoryProcess": "制作過程・舞台裏",
     "categoryFlash": "新作フラッシュ",
     "categoryTravel": "ゲストスポット・旅行",
     "categoryAnnouncements": "お知らせ",
     "readMore": "続きを読む",
-    "shareThis": "この投稿をシェア"
+    "shareThis": "この投稿をシェア",
+    "relatedPosts": "関連記事",
+    "backToBlog": "日記に戻る"
   },
   "contact": {
     "title": "お問い合わせ",

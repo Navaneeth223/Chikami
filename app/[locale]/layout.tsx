@@ -11,6 +11,8 @@ import Footer from '@/components/shared/Footer';
 import CustomCursor from '@/components/shared/CustomCursor';
 import PageTransition from '@/components/shared/PageTransition';
 import NeonGlowEffect from '@/components/shared/NeonGlowEffect';
+import { generateMetadata as generateSEOMetadata } from './metadata';
+import type { Metadata } from 'next';
 
 // Display font - Fraunces (Latin)
 const fraunces = Fraunces({
@@ -30,6 +32,15 @@ const instrumentSans = Instrument_Sans({
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return generateSEOMetadata(locale);
 }
 
 export default async function LocaleLayout({

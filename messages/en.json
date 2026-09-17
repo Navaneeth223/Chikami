@@ -112,13 +112,17 @@
   },
   "blog": {
     "title": "Journal",
+    "subtitle": "Process notes, flash drops, travel updates, and behind-the-scenes from the studio.",
     "categories": "Categories",
+    "categoryAll": "All",
     "categoryProcess": "Process & Behind the Scenes",
     "categoryFlash": "New Flash Drops",
     "categoryTravel": "Guest Spots & Travel",
     "categoryAnnouncements": "Announcements",
     "readMore": "Read more",
-    "shareThis": "Share this post"
+    "shareThis": "Share this post",
+    "relatedPosts": "Related Posts",
+    "backToBlog": "Back to Journal"
   },
   "contact": {
     "title": "Get in Touch",
