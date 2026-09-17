@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "commissions": "Commissions",
+    "blog": "Journal",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "CHIKAMI",
+    "subtitle": "Drawing since four, tattooing since sixteen. Nearly three decades in the craft. Working from Japan.",
+    "cta": "See the work",
+    "twoHandsTitle": "Two hands, one line",
+    "twoHandsDesc": "Traditional irezumi meets digital character design — Edo-period ink tradition colliding with Reiwa-era culture.",
+    "selectedWork": "Selected Work",
+    "latestUpdates": "Latest Updates",
+    "bookingCta": "Start a Commission"
+  },
+  "gallery": {
+    "title": "Portfolio",
+    "filterAll": "All",
+    "filterTraditional": "Irezumi & Flash",
+    "filterCharacter": "Character & VTuber Design",
+    "filterSketches": "Sketches & Process",
+    "loading": "Loading artwork...",
+    "noResults": "No artwork found for this filter."
+  },
+  "about": {
+    "title": "Her Story",
+    "intro": "Drawing since four, tattooing professionally since sixteen. Now 44, with nearly three decades immersed in the craft — traditional Japanese irezumi, tattoo flash, and vibrant character illustration for the digital age.",
+    "timelineTitle": "The Path",
+    "mediums": "Mediums & Techniques",
+    "mediumsDesc": "Digital illustration, pencil sketching, and traditional tattoo technique.",
+    "philosophy": "Where tradition meets the present",
+    "philosophyDesc": "Every piece bridges two worlds: the dense black linework and mythological vocabulary of Edo-period irezumi, and the bright, saturated energy of contemporary character design. It's not fusion — it's conversation."
+  },
+  "commissions": {
+    "title": "Commissions & Booking",
+    "intro": "From initial concept to final session, here's how we work together.",
+    "processTitle": "The Process",
+    "step1": "Inquiry",
+    "step1Desc": "Share your vision — placement, size, reference images, and budget through the form below.",
+    "step2": "Consultation",
+    "step2Desc": "We'll discuss the concept, finalize the design direction, and confirm pricing and timeline.",
+    "step3": "Design",
+    "step3Desc": "I'll create the artwork and share drafts for your feedback before the session.",
+    "step4": "Session",
+    "step4Desc": "The final piece comes to life. Aftercare instructions provided.",
+    "pricingTitle": "Pricing & Availability",
+    "pricingIntro": "Starting at ¥5,000. Current promotions and availability:",
+    "faqTitle": "Frequently Asked",
+    "bookingFormTitle": "Start Your Inquiry"
+  },
+  "blog": {
+    "title": "Journal",
+    "categories": "Categories",
+    "categoryProcess": "Process & Behind the Scenes",
+    "categoryFlash": "New Flash Drops",
+    "categoryTravel": "Guest Spots & Travel",
+    "categoryAnnouncements": "Announcements",
+    "readMore": "Read more",
+    "shareThis": "Share this post"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "intro": "For press, collaboration, or general inquiries:",
+    "email": "Email",
+    "social": "Follow the work",
+    "line": "LINE Official Account",
+    "location": "Based in Japan",
+    "formTitle": "Send a Message",
+    "formName": "Your name",
+    "formEmail": "Email address",
+    "formMessage": "Message",
+    "formSubmit": "Send",
+    "formSuccess": "Message sent! I'll get back to you soon.",
+    "formError": "Something went wrong. Please try again or email directly."
+  },
+  "footer": {
+    "copyright": "© {year} Chikami. All artwork 無断転載禁止 (reproduction prohibited).",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Your email",
+    "newsletterSubmit": "Subscribe",
+    "social": "Social"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "readMore": "Read more",
+    "viewAll": "View all"
+  }
+}

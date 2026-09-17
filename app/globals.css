@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CHIKAMI PORTFOLIO — DESIGN SYSTEM
+   Edo meets Reiwa: Traditional irezumi + Digital character work
+   ============================================ */
+
+@layer base {
+  :root {
+    /* COLOR PALETTE — Japanese Pigments */
+    --color-sumi: #0C0C0D;
+    --color-washi: #EFE8D8;
+    --color-shu: #B23A1E;
+    --color-ai: #22395C;
+    --color-neon: #00E5C7;
+    --color-kin: #B8925A;
+    
+    /* TYPOGRAPHY */
+    --font-display: 'Fraunces', 'Shippori Mincho B1', serif;
+    --font-body: 'Instrument Sans', 'Zen Kaku Gothic New', sans-serif;
+    
+    /* SPACING */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-6: 3rem;
+    --space-8: 4rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-washi);
+    background-color: var(--color-sumi);
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: overlay;
+  }
+
+  ::selection {
+    background-color: var(--color-shu);
+    color: var(--color-washi);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 250ms ease-out;
+  }
+
+  a:hover {
+    color: var(--color-kin);
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-kin);
+    outline-offset: 4px;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .section-padding {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-family: var(--font-body);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+  }
+
+  .btn-primary {
+    background-color: var(--color-shu);
+    color: var(--color-washi);
+  }
+
+  .btn-primary:hover {
+    background-color: #8B2E18;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-washi);
+    border: 1px solid var(--color-kin);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-kin);
+    color: var(--color-sumi);
+  }
+
+  .brush-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--color-kin) 10%,
+      var(--color-kin) 90%,
+      transparent 100%
+    );
+  }
+
+  .ink-bleed::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: radial-gradient(
+      ellipse at center top,
+      transparent 0%,
+      rgba(12, 12, 13, 0.3) 50%,
+      rgba(12, 12, 13, 0.8) 100%
+    );
+    pointer-events: none;
+    filter: blur(20px);
+  }
+
+  .skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-shu);
+    color: var(--color-washi);
+    padding: var(--space-2) var(--space-4);
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 250ms ease-out;
+  }
+
+  .skip-to-content:focus {
+    top: var(--space-2);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-sumi {
+    color: var(--color-sumi);
+  }
+
+  .text-washi {
+    color: var(--color-washi);
+  }
+
+  .text-shu {
+    color: var(--color-shu);
+  }
+
+  .text-ai {
+    color: var(--color-ai);
+  }
+
+  .text-neon {
+    color: var(--color-neon);
+  }
+
+  .text-kin {
+    color: var(--color-kin);
+  }
+
+  .bg-sumi {
+    background-color: var(--color-sumi);
+  }
+
+  .bg-ai {
+    background-color: var(--color-ai);
+  }
+
+  .bg-shu {
+    background-color: var(--color-shu);
+  }
+
+  .shadow-subtle {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .shadow-strong {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .section-padding {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sumi);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ai);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-kin);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

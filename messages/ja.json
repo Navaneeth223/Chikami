@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "work": "作品",
+    "about": "紹介",
+    "commissions": "依頼",
+    "blog": "日記",
+    "contact": "連絡"
+  },
+  "home": {
+    "title": "ちかみ",
+    "subtitle": "4歳から絵を描き、16歳からタトゥーアーティストとして活動。約30年の経験。日本を拠点に制作。",
+    "cta": "作品を見る",
+    "twoHandsTitle": "二つの手、一本の線",
+    "twoHandsDesc": "伝統的な和彫りとデジタルキャラクターデザインの出会い — 江戸時代の墨の伝統と令和時代の文化の衝突。",
+    "selectedWork": "選ばれた作品",
+    "latestUpdates": "最新情報",
+    "bookingCta": "依頼を始める"
+  },
+  "gallery": {
+    "title": "作品集",
+    "filterAll": "すべて",
+    "filterTraditional": "和彫り・フラッシュ",
+    "filterCharacter": "キャラクター・Vtuberデザイン",
+    "filterSketches": "スケッチ・制作過程",
+    "loading": "読み込み中...",
+    "noResults": "該当する作品が見つかりません。"
+  },
+  "about": {
+    "title": "私の物語",
+    "intro": "4歳から絵を描き始め、16歳からプロとしてタトゥーを彫り始めました。現在44歳、約30年間この道に没頭してきました — 伝統的な日本の和彫り、タトゥーフラッシュ、そしてデジタル時代の鮮やかなキャラクターイラストレーション。",
+    "timelineTitle": "歩んできた道",
+    "mediums": "技法・メディウム",
+    "mediumsDesc": "デジタルイラストレーション、鉛筆スケッチ、伝統的なタトゥー技法。",
+    "philosophy": "伝統と現代の出会い",
+    "philosophyDesc": "すべての作品は二つの世界を繋いでいます：江戸時代の和彫りの濃密な黒線と神話的な語彙、そして現代のキャラクターデザインの明るく飽和したエネルギー。融合ではなく、対話です。"
+  },
+  "commissions": {
+    "title": "依頼・予約",
+    "intro": "コンセプトから最終セッションまで、私たちの制作プロセス。",
+    "processTitle": "制作の流れ",
+    "step1": "お問い合わせ",
+    "step1Desc": "下記のフォームから、配置、サイズ、参考画像、予算をお知らせください。",
+    "step2": "相談",
+    "step2Desc": "コンセプトを話し合い、デザインの方向性を確定し、価格とスケジュールを決定します。",
+    "step3": "デザイン",
+    "step3Desc": "作品を制作し、セッション前にドラフトを共有してフィードバックをいただきます。",
+    "step4": "セッション",
+    "step4Desc": "最終的な作品が完成します。アフターケアの説明も行います。",
+    "pricingTitle": "価格・空き状況",
+    "pricingIntro": "¥5,000〜。現在のプロモーションと空き状況：",
+    "faqTitle": "よくある質問",
+    "bookingFormTitle": "お問い合わせフォーム"
+  },
+  "blog": {
+    "title": "日記",
+    "categories": "カテゴリー",
+    "categoryProcess": "制作過程・舞台裏",
+    "categoryFlash": "新作フラッシュ",
+    "categoryTravel": "ゲストスポット・旅行",
+    "categoryAnnouncements": "お知らせ",
+    "readMore": "続きを読む",
+    "shareThis": "この投稿をシェア"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "intro": "プレス、コラボレーション、一般的なお問い合わせは：",
+    "email": "メール",
+    "social": "制作をフォロー",
+    "line": "LINE公式アカウント",
+    "location": "日本を拠点に活動",
+    "formTitle": "メッセージを送る",
+    "formName": "お名前",
+    "formEmail": "メールアドレス",
+    "formMessage": "メッセージ",
+    "formSubmit": "送信",
+    "formSuccess": "メッセージを送信しました！すぐにご返信いたします。",
+    "formError": "エラーが発生しました。もう一度お試しいただくか、直接メールでご連絡ください。"
+  },
+  "footer": {
+    "copyright": "© {year} ちかみ。すべての作品 無断転載禁止。",
+    "newsletter": "ニュースレター",
+    "newsletterPlaceholder": "メールアドレス",
+    "newsletterSubmit": "登録",
+    "social": "ソーシャル"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "close": "閉じる",
+    "next": "次へ",
+    "previous": "前へ",
+    "readMore": "続きを読む",
+    "viewAll": "すべて見る"
+  }
+}
