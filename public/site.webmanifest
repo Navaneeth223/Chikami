@@ -1,0 +1,22 @@
+{
+  "name": "Chikami — Tattoo Artist & Illustrator",
+  "short_name": "Chikami",
+  "description": "Traditional Japanese irezumi meets digital character design. 30 years of experience. Based in Osaka, Japan.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0C0C0D",
+  "background_color": "#0C0C0D",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "ja"
+}

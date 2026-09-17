@@ -11,6 +11,7 @@ import Footer from '@/components/shared/Footer';
 import CustomCursor from '@/components/shared/CustomCursor';
 import PageTransition from '@/components/shared/PageTransition';
 import NeonGlowEffect from '@/components/shared/NeonGlowEffect';
+import StructuredData from '@/components/shared/StructuredData';
 import { generateMetadata as generateSEOMetadata } from './metadata';
 import type { Metadata } from 'next';
 
@@ -76,6 +77,7 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <StructuredData locale={locale} />
       </head>
       <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
