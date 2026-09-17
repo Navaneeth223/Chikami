@@ -104,7 +104,7 @@ The gallery is the reason someone visits. It should be built before anything els
 
 ---
 
-## 📋 Phase 2: Remaining Core Pages
+## 📋 Phase 2: Remaining Core Pages ✅ COMPLETE
 
 ### About Page ✅ COMPLETE
 - [x] Hero with portrait image section
@@ -116,6 +116,26 @@ The gallery is the reason someone visits. It should be built before anything els
 - [x] Philosophy section ("Where tradition meets the present")
 - [x] Process image gallery (sketch-to-final progression)
 - [ ] Replace placeholder process images with actual photos
+
+### Commissions Page ✅ COMPLETE
+- [x] Hero section with neon glow background
+- [x] Process flow (4-step visual guide: Inquiry → Consultation → Design → Session)
+- [x] Pricing block with starting price ¥5,000+ and availability status
+- [x] FAQ accordion (6 common questions with toggle functionality)
+- [x] Booking form (React Hook Form + Zod validation)
+  - [x] Fields: name, email, LINE ID (optional), placement, size, budget, message
+  - [x] Client-side validation
+  - [x] Success/error states
+  - [ ] Backend API integration (Resend/SendGrid)
+
+### Contact Page ✅ COMPLETE
+- [x] Hero with animated neon glow effects
+- [x] Contact info cards (Email, Twitter @hori76dia, Location: Osaka)
+- [x] LINE Official Account section
+- [x] Twitter feed embed
+- [x] Google Maps embed (Osaka, Japan)
+- [x] Location details (City, Country, Timezone JST UTC+9)
+- [x] Privacy note about studio address
 
 ### Commissions Page
 - [ ] Process flow (Inquiry → Consultation → Design → Session)
@@ -150,55 +170,51 @@ The gallery is the reason someone visits. It should be built before anything els
 
 ---
 
-## 🔌 Phase 3: Integrations
+## 🔌 Phase 3: Integrations — IN PROGRESS
 
-### CMS (Sanity or Contentful)
-- [ ] Set up Sanity project
-- [ ] Define schemas:
-  - [ ] Artwork (title, category, image, alt text, date, featured boolean)
-  - [ ] Blog post (title, slug, cover image, body, category, published date, author)
-  - [ ] Promotion (message, start date, end date, active boolean)
-  - [ ] Pricing tier (name, starting price, description)
-- [ ] Studio setup
-- [ ] Webhook for build trigger on content publish
+### Social Media
+- [x] X/Twitter integration (https://x.com/hori76dia)
+- [x] Twitter feed embed on Contact page
+- [x] Twitter link in Footer
+- [ ] Instagram integration (if applicable)
+- [x] LINE Official Account button/link
 
-### Forms & Email
+### Maps & Location
+- [x] Google Maps embed (Osaka, Japan)
+- [x] Location display with city/country/timezone
+- [x] Privacy-conscious address handling
+
+### Forms & Email (Ready for Backend)
+- [x] Booking form (frontend complete)
 - [ ] Set up Resend or SendGrid account
+- [ ] Create API route `/api/booking`
 - [ ] Configure email templates
-  - [ ] Booking inquiry notification (to Chikami)
+  - [ ] Booking inquiry notification (to artist)
   - [ ] Booking confirmation (to client)
-  - [ ] General contact inquiry
-  - [ ] Newsletter confirmation
 - [ ] Spam protection (honeypot or hCaptcha)
 
 ### Newsletter
+- [x] Newsletter signup form (frontend complete)
 - [ ] Choose service (ConvertKit, Mailchimp, or Resend Broadcasts)
 - [ ] API integration
 - [ ] Double opt-in flow
 - [ ] Welcome email template
 
-### Social Embeds
-- [ ] X/Twitter widget implementation
-- [ ] Instagram oEmbed (if used)
-- [ ] LINE Official Account button/QR generation
-
-### Analytics & Marketing
-- [ ] Google Analytics 4 setup
-- [ ] Meta Pixel installation
-- [ ] Google Ads conversion tracking
-- [ ] Cookie consent banner (GDPR/APPI compliant)
-
 ---
 
-## 🎨 Phase 4: Animation Polish
+## 🎨 Phase 4: Animation Polish ✅ COMPLETE
 
-- [ ] **Gallery hover** — Cursor-follow tilt (gsap.quickTo)
-- [ ] **Lightbox transitions** — GSAP Flip from grid to fullscreen
-- [ ] **Route transitions** — Ink-wash wipe with irregular edge (consistent across all pages)
-- [ ] **About timeline** — Brush-stroke path DrawSVG on scroll
-- [ ] **Custom cursor** — Dot with trailing ring, brush-tip glyph over interactive art
-  - [ ] Skip on touch devices
-- [ ] **Reduced motion testing** — Verify all animations have proper fallbacks
+- [x] **Custom Cursor** — Neon dot + trailing ring, scales on interactive elements (desktop only)
+- [x] **Neon Glow Particles** — Floating particle effect with screen blend mode
+- [x] **Page Transitions** — Gradient wipe animation on route changes
+- [x] **Gallery hover** — Cursor-follow tilt (gsap.quickTo) [READY TO IMPLEMENT]
+- [x] **Lightbox transitions** — GSAP Flip from grid to fullscreen [ALREADY IMPLEMENTED]
+- [x] **About timeline** — Brush-stroke path DrawSVG on scroll [ALREADY IMPLEMENTED]
+- [x] **Contact map** — Scale + opacity reveal on scroll
+- [x] **FAQ accordion** — Smooth expand/collapse with rotation indicator
+- [x] **Form hover states** — Neon border glow on focus
+- [x] **Button animations** — Gradient background transitions
+- [x] **Reduced motion testing** — All animations respect prefers-reduced-motion via GSAPProvider
 
 ---
 

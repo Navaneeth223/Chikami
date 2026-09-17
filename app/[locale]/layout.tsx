@@ -8,6 +8,9 @@ import GSAPProvider from '@/components/shared/GSAPProvider';
 import SmoothScroll from '@/components/shared/SmoothScroll';
 import Navigation from '@/components/shared/Navigation';
 import Footer from '@/components/shared/Footer';
+import CustomCursor from '@/components/shared/CustomCursor';
+import PageTransition from '@/components/shared/PageTransition';
+import NeonGlowEffect from '@/components/shared/NeonGlowEffect';
 
 // Display font - Fraunces (Latin)
 const fraunces = Fraunces({
@@ -66,6 +69,9 @@ export default async function LocaleLayout({
       <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <GSAPProvider>
+            <NeonGlowEffect color="neon" />
+            <CustomCursor />
+            <PageTransition />
             <SmoothScroll>
               <a href="#main-content" className="skip-to-content">
                 Skip to content
